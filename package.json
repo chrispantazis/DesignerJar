@@ -1,0 +1,23 @@
+{
+  "name": "experiments",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/oxygenna/origin-theme#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.3",
+    "del": "^3.0.0",
+    "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp-hub": "github:frankwallis/gulp-hub#registry-init",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-sass": "^3.1.0",
+    "path-posix": "^1.0.0",
+    "yargs": "^11.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

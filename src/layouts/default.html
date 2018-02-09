@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="{{ base }}">
+    <title>Experiments</title>
+    <!-- load fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Barlow:100,200,300,400,400i,500,700" rel="stylesheet">
+    <!-- load CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body class="mdc-typography">
+    {% block content %}{% endblock %}
+
+    <!-- initialise material components js -->
+    <script src="assets/js/jquery.js"></script>
+
+    {% block scripts %}{% endblock %}
+  </body>
+</html>
