@@ -1,5 +1,9 @@
-$background: red;
+/*!
+ * Designer Jar v0.1.0 (https://designerjar.com)
+ * Copyright 2018 Andrew Chraniotis & Christos Pantazis
+  */
 
-body {
-  background: $background;
-}
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/type";
+
