@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/icons/work-type</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,1.18394282 L0.841159125,7.86552763 C0.639283787,8.05394462 0.322889348,8.04303446 0.134472366,7.84115913 C-0.0539446162,7.63928379 -0.0430344631,7.32288935 0.158840875,7.13447237 L7.65884087,0.134472366 C7.85094425,-0.044824122 8.14905575,-0.044824122 8.34115913,0.134472366 L15.8411591,7.13447237 C16.0430345,7.32288935 16.0539446,7.63928379 15.8655276,7.84115913 C15.6771107,8.04303446 15.3607162,8.05394462 15.1588409,7.86552763 L8,1.18394282 Z M7,12 L7,15.5 C7,15.7761424 6.77614237,16 6.5,16 L2.5,16 C2.22385763,16 2,15.7761424 2,15.5 L2,8.5 C2,8.22385763 2.22385763,8 2.5,8 C2.77614237,8 3,8.22385763 3,8.5 L3,15 L6,15 L6,11.5 C6,11.2238576 6.22385763,11 6.5,11 L9.5,11 C9.77614237,11 10,11.2238576 10,11.5 L10,15 L13,15 L13,8.5 C13,8.22385763 13.2238576,8 13.5,8 C13.7761424,8 14,8.22385763 14,8.5 L14,15.5 C14,15.7761424 13.7761424,16 13.5,16 L9.5,16 C9.22385763,16 9,15.7761424 9,15.5 L9,12 L7,12 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets/icons/work-type">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icon" fill="#444444" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="pallete/contextual/primary" mask="url(#mask-2)" fill="#747474">
+                <rect id="bg" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

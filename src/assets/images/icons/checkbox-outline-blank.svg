@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/icons/checkbox-outline-blank</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.88,3 C12.1822237,3 12.4444433,3.11111 12.6666667,3.33333333 C12.88889,3.55555667 13,3.81777627 13,4.12 L13,11.88 C13,12.1822237 12.88889,12.4444433 12.6666667,12.6666667 C12.4444433,12.88889 12.1822237,13 11.88,13 L4.12,13 C3.81777627,13 3.55555667,12.88889 3.33333333,12.6666667 C3.11111,12.4444433 3,12.1822237 3,11.88 L3,4.12 C3,3.81777627 3.11111,3.55555667 3.33333333,3.33333333 C3.55555667,3.11111 3.81777627,3 4.12,3 L11.88,3 Z M11.88,4.12 L4.12,4.12 L4.12,11.88 L11.88,11.88 L11.88,4.12 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets/icons/checkbox-outline-blank">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icon" fill="#000000" xlink:href="#path-1"></use>
+            <g id="pallete/contextual/primary" mask="url(#mask-2)" fill="#747474">
+                <rect id="bg" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

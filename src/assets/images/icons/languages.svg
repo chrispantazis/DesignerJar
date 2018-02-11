@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/icons/languages</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3,2 L3,9 L12.690983,9 L11.0527864,5.7236068 C10.9824045,5.58284305 10.9824045,5.41715695 11.0527864,5.2763932 L12.690983,2 L3,2 Z M3,1 L13.5,1 C13.871691,1 14.1134389,1.39115625 13.9472136,1.7236068 L12.059017,5.5 L13.9472136,9.2763932 C14.1134389,9.60884375 13.871691,10 13.5,10 L3,10 L3,15.5 C3,15.7761424 2.77614237,16 2.5,16 C2.22385763,16 2,15.7761424 2,15.5 L2,0.5 C2,0.223857625 2.22385763,0 2.5,0 C2.77614237,0 3,0.223857625 3,0.5 L3,1 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets/icons/languages">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icon" fill="#444444" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="pallete/contextual/primary" mask="url(#mask-2)" fill="#747474">
+                <rect id="bg" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
