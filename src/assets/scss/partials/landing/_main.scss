@@ -6,6 +6,10 @@
 	color: #fff;
 	font-weight: $font-weight-bold;
 	border-radius: 2px;
+	@extend .transition;
+	&:hover {
+		background-color: lighten($accent-color, 5%);
+	}
 }
 
 .btn-secondary {
@@ -16,12 +20,16 @@
 	color: #fff;
 	font-weight: $font-weight-bold;
 	border-radius: 2px;
+	@extend .transition;
+	&:hover {
+		background-color: lighten($gray-dark, 5%);
+	}
 }
 
 .btn-primary-circle {
 	background-color: $gray-dark;
-	width: 36px;
-	height: 36px;
+	width: 37px;
+	height: 37px;
 	display: block;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -30,12 +38,17 @@
 	border-radius: 50%;
 	margin-top: 72px;
 	display: flex;
-	align-items:center;
+	align-items: center;
 	justify-content: center;
-	svg path{
-		fill: #fff !important;
-		opacity: 1;
-		margin: 0 auto;
+	svg {
+		position: relative;
+		path {
+			fill: #fff !important;
+			opacity: 1;
+			margin: 0 auto;
+			left: -1px;
+			position: relative;
+		}
 	}
 }
 
@@ -106,5 +119,9 @@ form {
 		position: relative;
 		border-radius: 0px 2px 2px 0px;
 		cursor: pointer;
+	@extend .transition;
+		&:hover {
+			background-color: lighten($accent-color, 5%);
+		}
 	}
 }

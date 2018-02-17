@@ -5,6 +5,10 @@
 	padding-bottom: 24px;
 	a {
 		color: $accent-color;
+		@extend .transition;
+		&:hover {
+			color: lighten($accent-color, 20%);
+		}
 	}
 	p {
 		color: #fff;
