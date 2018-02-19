@@ -1,8 +1,9 @@
 .dj-header {
+  background: theme-color(background);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px;
+  padding: $spacer;
   height: $header-height;
   z-index: 2;
 }
