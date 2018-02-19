@@ -1,8 +1,23 @@
-.shadow-level-02 {
-	background: rgba(255,255,255,0.00);
-	box-shadow: 0 9px 14px 0 rgba(0,0,0,0.06);
+// Shadows
+.dj-elevation-1 {
+  box-shadow: 0 4px 7px 0 rgba(0,0,0,0.06);
+}
+.dj-elevation-2 {
+  box-shadow: 0 9px 14px 0 rgba(0,0,0,0.06);
 }
 
-.transition {
-	transition-duration: .1s;
+// Column Order
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .dj-order-1#{$infix}   { 
+      order: 1; 
+    }
+    .dj-order-2#{$infix}   { 
+      order: 2; 
+    }
+    .dj-order-3#{$infix}   { 
+      order: 3; 
+    }
+  }
 }

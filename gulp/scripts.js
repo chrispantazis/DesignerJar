@@ -8,8 +8,14 @@ const $ = require('gulp-load-plugins')({
 });
 
 function jquery() {
-  return gulp.src('node_modules/jquery/dist/jquery.js')
+  return gulp.src([
+  	'node_modules/jquery/dist/jquery.js',
+  	'src/assets/js/**/*.js'
+  	])
     .pipe(gulp.dest($.pathPosix.join(conf.paths.dist, 'assets', 'js')));
 }
-
-exports.scripts = gulp.parallel(jquery);
+function images() {
+  return gulp.src('src/assets/images/**/*.{png,jpg,gif,svg}')
+    .pipe(gulp.dest($.pathPosix.join(conf.paths.dist, 'assets', 'images')));
+}
+exports.scripts = gulp.parallel(jquery, images);

@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const conf = require('../conf');
 const build = require('./build');
 const styles = require('./styles');
+const scripts = require('./scripts');
 
 const $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'path-posix', 'browser-sync', 'nunjucks-render']
@@ -36,7 +37,7 @@ function browser() {
   });
 
   gulp.watch([
-    '.server/**/*.*',
+    '.server/**/*.{html,js,png,jpg,gif}',
   ], {
     delay: 500
   }, function(callback) {

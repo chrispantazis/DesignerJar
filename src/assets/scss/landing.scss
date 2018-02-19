@@ -1,14 +1,31 @@
 /*!
- * Designer Jar v0.1.0 (https://designerjar.com)
- * Copyright 2018 Andrew Chraniotis & Christos Pantazis
-  */
+o-o                                   o         
+|  \          o                       |         
+|   O o-o o-o   o--o o-o  o-o o-o     |  oo o-o 
+|  /  |-'  \  | |  | |  | |-' |   \   o | | |   
+o-o   o-o o-o | o--O o  o o-o o    o-o  o-o-o   
+                   |                            
+                o--o                            
 
+Designer Jar v0.1.0 (https://designerjar.com)
+Copyright 2018 Andrew Chraniotis & Christos Pantazis
+*/
+
+// External Libraries
+@import "aos/src/sass/aos";
+
+// Variables & Functions
+@import "partials/landing/mixins";
 @import "partials/landing/variables";
-@import "partials/landing/utilities";
+
+// Basic CSS
 @import "partials/landing/reset";
 @import "partials/landing/type";
 
+// Elements
 @import "partials/landing/header";
 @import "partials/landing/main";
 @import "partials/landing/footer";
 
+// Utilities
+@import "partials/landing/utilities";

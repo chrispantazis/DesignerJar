@@ -1,5 +1,73 @@
 // Variables
-$accent-color: #F5A623;
-$gray-dark: #434343;
-$border-color: #e8e8e8;
-$gray: #BFBFBF;
+
+// Colors
+$theme-colors: (
+  ink: #000000,
+  background: #ffffff,
+  primary:    #F5A623,
+  secondary:  #F5A623,
+  success:    red,
+  warning:    green,
+  gray-dark:     blue,
+  gray-light:      yellow,
+  gray-lighter:       #F7F7F7
+);
+
+// Brekpoints
+$grid-breakpoints: (
+  mobile: 0,
+  tablet: 768px,
+  desktop: 992px
+);
+
+// Spacer
+$spacer: 24px;
+
+// Typography
+
+// - Βase
+$body-font-size: 1rem !default;
+$body-line-height: 1.75 !default;
+$body-font-family: 'IBM Plex Sans' !default;
+$body-font-color: lighten(theme-color(ink), 68%) !default;
+$body-font-weight: 400 !default;
+
+// - Headings
+$h1-font-size: 2.1rem !default;
+$h2-font-size: 1.75rem !default;
+$h3-font-size: 1.3rem !default;
+$h4-font-size: 1.125rem !default;
+$h5-font-size: 0.875rem !default;
+$h6-font-size: 0.75rem !default;
+
+$headings-margin-bottom:      $spacer !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        700 !default;
+$headings-line-height:        1.33 !default;
+$headings-font-color:         theme-color(ink) !default;
+$headings-responsive-scale: 1.2;
+
+// Responsive type ratio
+$body-font-size-tablet: 1.1428571429;
+$body-font-size-desktop: 1.1428571429;
+
+
+// - Links
+$link-color:                theme-color(primary) !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+
+// - Misc 
+$font-size-small:             80% !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-family-mono: 'IBM Plex Mono';
+
+// Header Navigation
+$header-height: 140px;
+
+// Transition-speed
+$transition-speed: 1s;
+
