@@ -1,0 +1,43 @@
+.dj-button {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  padding: 1rem 2rem;
+  border-radius: $border-radius;
+  transition: background-color $transition-speed/2;
+  display: inline-block;
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+  &--primary {
+    background: theme-color(primary);
+    color: theme-color(secondary-light);
+    stroke: theme-color(secondary-light);
+    &:hover {
+      background: lighten(theme-color(primary), 10%);
+      color: theme-color(secondary-light);
+    }
+  }
+  &--secondary {
+    background: theme-color(secondary);
+    color: theme-color(primary-light);
+    stroke: theme-color(primary-light);
+    &:hover {
+      background: darken(theme-color(secondary), 5%);  
+      color: theme-color(primary-light);
+    }
+  }
+  &--medium {
+
+  }
+  &--fab {
+    padding: 1rem;
+    border-radius: 50%;
+  }
+}
+
+.dj-button__icon {
+  vertical-align: middle;
+}

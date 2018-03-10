@@ -1,0 +1,40 @@
+.dj-form {
+  width: 100%;
+  &--vertical {
+    display: flex;
+  }
+}
+.dj-form__input {
+  padding: 1rem;
+  font-family: $body-font-family;
+  font-size: 0.875rem;
+  line-height: 1;
+  border: 1px solid theme-color(gray-light);
+  height: 3rem;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-input-placeholder {
+    color: theme-color(gray);
+  }
+  &::-moz-placeholder { 
+    color: theme-color(gray);
+  }
+  &:-ms-input-placeholder { 
+    color: theme-color(gray);
+  }
+  &:-moz-placeholder {
+    color: theme-color(gray);
+  }
+  .dj-form--vertical & {
+    flex: 1 1 auto;
+    border-right: 0; 
+  }
+}
+
+.dj-form__submit {
+  .dj-form--vertical & {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

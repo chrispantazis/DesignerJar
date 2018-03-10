@@ -4,12 +4,17 @@
 $theme-colors: (
   ink: #000000,
   background: #ffffff,
-  primary:    #F5A623,
-  secondary:  #F5A623,
+  primary:    #4F3150,
+  secondary:  #E28481,
+  primary-light: #F1E0F1,
+  primary-dark: #422643,
+  secondary-light: #FBACA9,
+  secondary-dark: #B14B48,
   success:    red,
   warning:    green,
+  gray: #BBBBBB,
   gray-dark:     blue,
-  gray-light:      yellow,
+  gray-light:      #E1E1E1,
   gray-lighter:       #F7F7F7
 );
 
@@ -70,4 +75,7 @@ $header-height: 140px;
 
 // Transition-speed
 $transition-speed: 1s;
+
+// Borders
+$border-radius: 4px;
 

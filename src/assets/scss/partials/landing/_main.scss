@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   padding: $spacer;
   order: 1;
   &--gray-lighter {

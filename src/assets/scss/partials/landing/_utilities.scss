@@ -1,3 +1,33 @@
+// Colors
+.dj-color-primary {
+  color: theme-color(primary);
+}
+.dj-color-secondary {
+  color: theme-color(secondary);
+}
+.dj-background-primary {
+  background: theme-color(primary);
+}
+.dj-background-secondary {
+  background: theme-color(secondary);
+}
+
+// Spacing {
+@for $i from 0 through 3 {
+  .dj-mt-#{$i} {
+    margin-top: #{$i * $spacer};
+  }
+  .dj-mb-#{$i} {
+    margin-bottom: #{$i * $spacer};
+  }
+  .dj-ml-#{$i} {
+    margin-left: #{$i * $spacer};
+  }
+  .dj-mr-#{$i} {
+    margin-right: #{$i * $spacer};
+  }
+}
+
 // Shadows
 .dj-elevation-1 {
   box-shadow: 0 4px 7px 0 rgba(0,0,0,0.06);
