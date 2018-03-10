@@ -7,11 +7,15 @@
   text-align: center;
   padding: $spacer*2 $spacer;
   grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .dj-footer__links {
   background: theme-color(primary);
-  padding: $spacer*2 $spacer;
+  padding: $spacer*3 $spacer;
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: theme-color(secondary-light);
@@ -27,7 +31,8 @@
 .dj-footer__copyright {
   background: theme-color(primary-dark);
   padding: $spacer;
-  grid-column-start: 2;  
+  grid-column-start: 2;
+  align-self: start;  
   color: theme-color(secondary-light);
   font-size: 0.875rem;
 }
