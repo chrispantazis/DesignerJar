@@ -2,6 +2,10 @@
   width: 100%;
   &--vertical {
     display: flex;
+    flex-direction: column;
+    @include media-up(tablet) {
+      flex-direction: row;
+    }
   }
 }
 .dj-form__input {
@@ -11,6 +15,7 @@
   line-height: 1;
   border: 1px solid theme-color(gray-light);
   height: 3rem;
+  margin-bottom: $spacer;
   &:focus {
     outline: none;
   }
@@ -28,13 +33,20 @@
   }
   .dj-form--vertical & {
     flex: 1 1 auto;
-    border-right: 0; 
+    @include media-up(tablet) {
+      border-right: 0; 
+    }
+  }
+  @include media-up(tablet) {
+    margin-bottom: 0;
   }
 }
 
 .dj-form__submit {
   .dj-form--vertical & {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    @include media-up(tablet) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
 }
