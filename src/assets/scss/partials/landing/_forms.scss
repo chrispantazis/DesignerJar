@@ -16,6 +16,7 @@
   border: 1px solid theme-color(gray-light);
   height: 3rem;
   margin-bottom: $spacer;
+  border-radius: $border-radius;
   &:focus {
     outline: none;
   }
@@ -39,6 +40,8 @@
   }
   @include media-up(tablet) {
     margin-bottom: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
