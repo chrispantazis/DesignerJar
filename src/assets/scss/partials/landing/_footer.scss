@@ -4,32 +4,40 @@
   grid-template-rows:  1fr;
   @include media-up(tablet) {
     min-height: 40vh;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 100% 1fr;
   }
 }
 
 .dj-footer__brand {
   text-align: center;
-  padding: $spacer*2 $spacer;
-  
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   @include media-up(tablet) {
-    grid-row: 1/3;
+    grid-row: 1;
   }
+}
+
+.dj-footer__brand-image {
+  height: $header-height * 0.4;
+  padding-right: $spacer/2;
+}
+
+.dj-footer__brand-text {
+  color: theme-color(background);
 }
 
 .dj-footer__links {
   background: theme-color(primary);
   padding: $spacer*3 $spacer;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: .5fr 1fr 1fr;
   color: theme-color(secondary-light);
   font-size: 0.875rem;
   a {
-    color: lighten(theme-color(secondary-light), 10%);
+    color: lighten(theme-color(secondary-light), 20%);
+    font-size: 1.2rem;
+    margin-top: $spacer/2;
+    display: block;
   }
 }
 
@@ -40,6 +48,9 @@
   color: theme-color(secondary-light);
   font-size: 0.875rem;
   @include media-up(tablet) {
-    grid-column-start: 2;
+    grid-column-start: 1;
+  }
+  a {
+    color: lighten(theme-color(secondary-light), 20%);
   }
 }

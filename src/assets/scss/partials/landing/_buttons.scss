@@ -8,6 +8,7 @@
   transition: background-color $transition-speed/2;
   display: inline-block;
   border: 0;
+  font-weight: $font-weight-bold;
   &:focus {
     outline: none;
   }
