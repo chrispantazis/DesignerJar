@@ -14,10 +14,11 @@
 }
 
 .dj-header__brand-image {
-  height: $header-height * 0.6;
+  height: $header-height * 0.25;
 }
 
 .dj-header__brand-text {
   margin: 0;
   padding: 0 $spacer/2;
+  font-size: $body-font-size * 1.25;
 }
