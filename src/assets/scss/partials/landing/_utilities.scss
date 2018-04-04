@@ -12,6 +12,14 @@
   background: theme-color(secondary);
 }
 
+// Divider
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(theme-color(secondary), .099);
+}
+
 // Spacing {
 @for $i from 0 through 3 {
   .dj-mt-#{$i} {

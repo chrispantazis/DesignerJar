@@ -10,7 +10,7 @@
   }
 }
 .dj-form__input {
-  padding: 1rem;
+  padding: 2rem 1rem;
   font-family: $body-font-family;
   font-size: 0.875rem;
   line-height: 1;
@@ -55,4 +55,9 @@
       border-bottom-left-radius: 0;
     }
   }
+}
+
+.form-counter {
+  font-size: $font-size-small;
+  margin-top: 8px;
 }
