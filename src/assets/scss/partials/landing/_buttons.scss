@@ -42,16 +42,3 @@
 .dj-button__icon {
   vertical-align: middle;
 }
-
-.dj-video-explainer {
-  background-color: theme-color(secondary);
-  width: $spacer*3;
-  height: $spacer*3;
-  display: block;
-  position: relative;
-  border-radius: 50%;
-  // &:after {
-  //   content:'';
-  //   background-image: url(../images/icons/play.svg);
-  // }
-}
