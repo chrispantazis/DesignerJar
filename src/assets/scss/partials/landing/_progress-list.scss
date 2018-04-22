@@ -1,0 +1,19 @@
+// Progress List
+.dj-progress-list {
+	display: grid;
+	grid-gap: $spacer;
+	counter-reset: section;
+	@include media-up(tablet) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	li:before {
+		
+	}
+}
+
+.dj-progress-list__item {
+	&:before {
+		counter-increment: section;	
+		content: counter(section); 
+	}
+}

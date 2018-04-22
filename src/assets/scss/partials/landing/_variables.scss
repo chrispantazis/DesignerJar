@@ -37,7 +37,7 @@ $spacer: 24px;
 $body-font-size: 1rem !default;
 $body-line-height: 1.75 !default;
 $body-font-family: 'IBM Plex Sans' !default;
-$body-font-color: lighten(theme-color(ink), 68%) !default;
+$body-font-color: lighten(theme-color(ink), 18%) !default;
 $body-font-weight: 400 !default;
 
 // - Headings
@@ -75,6 +75,7 @@ $font-family-mono: 'IBM Plex Mono';
 
 // Header Navigation
 $header-height: 140px;
+$brand-height: 36px;
 
 // Transition-speed
 $transition-speed: 1s;
