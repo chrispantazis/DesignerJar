@@ -7,13 +7,11 @@
 .dj-main {
   display: grid;
   grid-template-columns: minmax(auto, map-get($grid-breakpoints, desktop-large));
-  padding: $spacer * 2;
+  padding: $spacer;
   justify-content: center;
 }
 
 // Sections 
 .dj-section {
-	display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: $spacer;
+	
 }

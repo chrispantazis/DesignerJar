@@ -19,7 +19,7 @@
   background-color: rgba(theme-color(secondary), .099);
 }
 
-// Spacing 
+// Spacing - margin
 @for $i from 0 through 3 {
   .dj-mt-#{$i} {
     margin-top: #{$i * $spacer};
@@ -32,6 +32,16 @@
   }
   .dj-mr-#{$i} {
     margin-right: #{$i * $spacer};
+  }
+}
+
+// Spacing - padding
+@for $i from 0 through 3 {
+  .dj-pt-#{$i} {
+    padding-top: #{$i * $spacer};
+  }
+  .dj-pb-#{$i} {
+    padding-bottom: #{$i * $spacer};
   }
 }
 
@@ -72,21 +82,6 @@
     }
     .dj-order-3#{$infix}   { 
       order: 3; 
-    }
-  }
-}
-
-// Grid
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-    @for $i from 1 through 12 {
-      .dj-column-start-#{$i}#{$infix} {   
-        grid-column-start: #{$i};
-      }
-      .dj-column-end-#{$i}#{$infix} {   
-        grid-column-end: #{$i + 1};
-      }
     }
   }
 }
