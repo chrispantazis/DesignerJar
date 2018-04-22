@@ -4,5 +4,11 @@
 }
 
 .dj-card__body {
-  padding: $spacer*5 $spacer*1.5;
+  padding: $spacer*2;
+  &--top-padding {
+    padding-top: $spacer*4;
+  }
+  &--bottom-padding {
+    padding-bottom: $spacer*4;
+  }
 }
