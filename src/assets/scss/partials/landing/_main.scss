@@ -1,51 +1,19 @@
 // Container
 .dj-container {
-  display: grid;
-  grid-template-rows: $header-height;
+  background: theme-color(background);
 }
 
 // Main
 .dj-main {
   display: grid;
-  counter-reset: section;  
-  @include media-up(tablet) {
-    grid-template-rows: calc(100vh - #{$header-height});
-    grid-auto-rows: 100vh;  
-  }
+  grid-template-columns: minmax(auto, map-get($grid-breakpoints, desktop-large));
+  padding: $spacer * 2;
+  justify-content: center;
 }
 
 // Sections 
 .dj-section {
 	display: grid;
-  @include media-up(tablet) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-// Columns
-.dj-section__column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: $spacer;
-  order: 1;
-  &--gray-lighter {
-    background: theme-color(gray-lighter);
-  }
-  @include media-up(tablet) {
-    min-height: 100%;
-  }
-}
-
-.dj-section__heading {
-  &:before {
-    counter-increment: section;
-    content: counter(section, decimal-leading-zero);
-    font-family: $font-family-mono;
-    margin-bottom: $spacer * 1.5;
-    display: block;
-    font-size: .75rem;
-    color: $body-font-color;
-  }
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: $spacer;
 }

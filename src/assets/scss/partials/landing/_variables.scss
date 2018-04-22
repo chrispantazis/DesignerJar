@@ -2,8 +2,9 @@
 
 // Colors
 $theme-colors: (
-  ink: #000000,
-  background: #ffffff,
+  ink: #474747,
+  paper: #ffffff,
+  background: #f9f9f9,
   primary:    #4F3150,
   secondary:  #E28481,
   primary-light: #F1E0F1,
@@ -13,16 +14,18 @@ $theme-colors: (
   success:    red,
   warning:    green,
   gray: #BBBBBB,
-  gray-dark:     blue,
+  gray-dark:     #999,
   gray-light:      #E1E1E1,
-  gray-lighter:       #F7F7F7
+  gray-lighter:       #F7F7F7,
+  white: #fff
 );
 
 // Brekpoints
 $grid-breakpoints: (
   mobile: 0,
   tablet: 768px,
-  desktop: 992px
+  desktop: 992px,
+  desktop-large: 1440px
 );
 
 // Spacer

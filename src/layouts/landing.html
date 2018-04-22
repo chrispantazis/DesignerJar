@@ -23,7 +23,7 @@
   <body>
       <div class="dj-container" data-aos="fade" data-aos-delay="400">
 
-        <header class="dj-header dj-elevation-2">
+        <header class="dj-header">
           {% include "partials/landing/header.html" %}
         </header>
 
@@ -41,9 +41,7 @@
     
     <script src="assets/js/jquery.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js"></script>
      <script>
-      var scroll = new SmoothScroll('a[href*="#"]');
       AOS.init();
     </script>
     {% block scripts %}{% endblock %}

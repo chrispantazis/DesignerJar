@@ -13,14 +13,13 @@
 }
 
 // Divider
-
-.divider {
+.dj-divider {
   height: 1px;
   width: 100%;
   background-color: rgba(theme-color(secondary), .099);
 }
 
-// Spacing {
+// Spacing 
 @for $i from 0 through 3 {
   .dj-mt-#{$i} {
     margin-top: #{$i * $spacer};
@@ -36,12 +35,29 @@
   }
 }
 
+// Positioning
+.dj-position-relative {
+  position: relative;
+}
+.dj-position-absolute {
+  position: absolute;
+}
 // Shadows
 .dj-elevation-1 {
   box-shadow: 0 4px 7px 0 rgba(0,0,0,0.06);
 }
 .dj-elevation-2 {
   box-shadow: 0 9px 14px 0 rgba(0,0,0,0.06);
+}
+.dj-elevation-3 {
+  box-shadow: 0 52px 114px 0 rgba(3,3,3, .06);
+}
+
+// Z-index
+@for $i from 0 through 3 {
+  .dj-z-#{$i} {
+    z-index: #{$i};
+  }
 }
 
 // Column Order
@@ -56,6 +72,21 @@
     }
     .dj-order-3#{$infix}   { 
       order: 3; 
+    }
+  }
+}
+
+// Grid
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @for $i from 1 through 12 {
+      .dj-column-start-#{$i}#{$infix} {   
+        grid-column-start: #{$i};
+      }
+      .dj-column-end-#{$i}#{$infix} {   
+        grid-column-end: #{$i + 1};
+      }
     }
   }
 }

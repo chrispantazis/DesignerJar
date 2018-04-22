@@ -95,3 +95,11 @@ h6, .h6 {
 .dj-text-transform-capitalize {
   text-transform: capitalize;
 }
+
+// - Colors
+.dj-color-primary {
+  color: theme-color(primary);
+}
+.dj-color-secondary {
+  color: theme-color(secondary); 
+}
