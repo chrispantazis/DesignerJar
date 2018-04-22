@@ -3,31 +3,48 @@
 {% block content %}
 
 <!-- Intro -->
-<section class="dj-section" id="section-intro">
-	<div class="dj-card dj-elevation-3 dj-column-start-1 dj-column-end-5 dj-z-2 dj-position-relative">
+<section class="dj-section dj-grid dj-pb-3" id="section-intro">
+	<div class="dj-card dj-elevation-3 dj-column-start-1 dj-column-end-12 dj-column-end-8-tablet dj-column-end-6-desktop dj-column-end-4-desktop-large dj-z-2 dj-position-relative">
 		<div class="dj-card__body dj-card__body--top-padding">
 			<h2>Get hired as a <span class="dj-color-secondary">designer</span></h2>
+			<p>Designerjar will order matching designers’ profiles 
+			completely randomly and transparently. </p>
 		</div>
 		<div class="dj-divider"></div>
-		<div class="dj-card__body dj-card__body--bottom-padding">
-			<h2>Get hired as a <span class="dj-color-secondary">designer</span></h2>
+		<div class="dj-card__body">
+			<form class="dj-form dj-form--vertical" data-aos="fade" data-aos-duration="1000" data-aos-delay="900">
+				<input type="text" class="dj-form__input" placeholder="Type your email here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+				<button class="dj-button dj-button--primary dj-form__submit" type="button">I'm in</button>
+			</form>
 		</div>
 	</div>
-	<div class="dj-demo-video dj-column-start-4 dj-column-end-12 dj-z-1 dj-position-relative" style="background: #fff; height: 800px; margin-top: -200px;"></div>
+	<div class="dj-demo-video dj-column-start-1 dj-column-start-4-tablet dj-column-end-12 dj-z-1 dj-position-relative" style="margin-top: 0px;">
+		<a href="#!" class="dj-video-explainer dj-z-3 dj-position-relative"></a>
+		<img src="/assets/images/dj-video-explainer.jpg" alt="Video Explainer">
+	</div>
 </section>
 
 <!-- Progress -->
-<section class="dj-section" id="section-progress">
-	Progress
+<section class="dj-section dj-pb-3 dj-grid" id="section-progress">
+	<div class="dj-card dj-elevation-3 dj-column-start-1 dj-column-end-12 dj-z-2 dj-position-relative">
+		<div class="dj-card__body dj-card__body--top-padding">
+			<h2 class="dj-text-align-center">Everytime an employer looks to hire <span class="dj-color-secondary">designers</span></h2>
+		</div>
+	</div>
 </section>
 
 <!-- Access -->
-<section class="dj-section" id="section-access">
-	Access
+<section class="dj-section dj-pb-3 dj-grid" id="section-access">
+	<div class="dj-card dj-elevation-3 dj-column-start-1 dj-column-end-12 dj-z-3 dj-column-start-1-tablet dj-column-start-4-desktop dj-column-end-8-desktop dj-position-relative">
+		<div class="dj-card__body dj-card__body--top-padding">
+			<h2 class="dj-text-align-center"><span class="dj-color-secondary">3,111</span> designers are in</h2>
+			<p class="dj-text-align-center">We are building Designerjar to let designers be easily discoverable for exciting work opportunities</p>
+			<form class="dj-form dj-form--vertical dj-mt-2" data-aos="fade" data-aos-duration="1000" data-aos-delay="900">
+				<input type="text" class="dj-form__input" placeholder="Type your email here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+				<button class="dj-button dj-button--primary dj-form__submit" type="button">I'm in</button>
+			</form>
+		</div>
+	</div>
 </section>
 
-<!-- Testimonials -->
-<section class="dj-section" id="section-testimonials">
-	Testimonials
-</section>
 {% endblock %}
