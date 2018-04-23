@@ -1,0 +1,36 @@
+// Container
+// Video explainer
+.dj-explainer-video {
+  display: block;
+  @include media-up(tablet) {
+    margin-top: -100px;
+  }
+  @include media-up(desktop) {
+    margin-top: -200px;
+  }
+}
+
+.dj-explainer-video__icon {
+  background-color: theme-color(secondary);
+  width: $spacer*3;
+  height: $spacer*3;
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color $transition-speed/2;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  &:after {
+    content:'';
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 18px solid theme-color(white);
+    margin-left: 2px;
+  }
+  .dj-explainer-video:hover & {
+    background-color: lighten(theme-color(secondary), 2%);
+  }
+}
+

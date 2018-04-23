@@ -1,6 +1,7 @@
 // Container
 .dj-container {
   background: theme-color(background);
+  position: relative;
 }
 
 // Main
@@ -9,46 +10,4 @@
   grid-template-columns: minmax(auto, map-get($grid-breakpoints, desktop-large));
   padding: $spacer;
   justify-content: center;
-  position: relative;
-}
-
-// Video explainer
-
-.dj-demo-video {
-  @include media-up(tablet) {
-    margin-top: -100px;
-  }
-  @include media-up(desktop) {
-    margin-top: -200px;
-  }
-	a {
-    .play-icon {
-      background-color: theme-color(secondary);
-      width: $spacer*3;
-      height: $spacer*3;
-      border-radius:50%;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      align-items: center;
-      transition: background-color $transition-speed/2;
-  	  &:after {
-  	    content:'';
-  	    background-image: url(/../assets/images/icons/play.svg);
-  	    height: 28px;
-  	    width: 21px;
-  	    display: block;
-  	    margin: 0 auto;
-        background-color: transparent;
-  	  }
-      &:hover {
-        background-color: lighten(theme-color(secondary), 2%);
-      }
-    }
-	}
 }

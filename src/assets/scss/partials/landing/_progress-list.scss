@@ -9,8 +9,8 @@
 		z-index: 1;
 		left: 16%;
 		right: 16%;
-		bottom: $spacer - 2px;
-		height: 4px;
+		bottom: $spacer - 1px;
+		height: 2px;
 		background: linear-gradient(to right, theme-color(secondary), darken(theme-color(secondary), 14%));
 		@include media-up(tablet) {
 			content: "";
