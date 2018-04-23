@@ -14,6 +14,12 @@
 // Video explainer
 
 .dj-demo-video {
+  @include media-up(tablet) {
+    margin-top: -100px;
+  }
+  @include media-up(desktop) {
+    margin-top: -200px;
+  }
 	a {
     .play-icon {
       background-color: theme-color(secondary);
@@ -38,6 +44,9 @@
   	    margin: 0 auto;
         background-color: theme-color(secondary);
   	  }
+      &:hover {
+        background-color: lighten(theme-color(secondary), 2%);
+      }
     }
 	}
 }
