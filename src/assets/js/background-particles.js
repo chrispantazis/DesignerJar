@@ -85,7 +85,7 @@
         o = function() {
             requestAnimationFrame(o), a.clearRect(0, 0, n.width, n.height), t.renderMetaballs()
         },
-        n = i.screen.init("dj-background-liquid", null, !0),
+        n = i.screen.init('dj-background-liquid', null, !0),
         a = n.ctx;
     n.resize(), t = new e(n.width, n.height, 6, "#E28481", "#E28481"), o()
 }();

@@ -36,13 +36,14 @@
 
       </div>
 
-    <!-- initialise material components js -->
-    
+    <!-- Scripts -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/background-particles.js"></script>
+    <script src="assets/js/youtube-popup.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
      <script>
-      AOS.init();
+        AOS.init();
+        $(".dj-explainer-video").grtyoutube();
     </script>
     {% block scripts %}{% endblock %}
   </body>
