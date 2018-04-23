@@ -1,0 +1,15 @@
+.wrap-2{
+    position:fixed;
+    z-index:-30;
+    top:0px;
+    left:0;
+    overflow:hidden;
+    height:200vh; // Change this value to height of the page
+    width:100vw;
+    margin:auto;
+    background: transparent;
+}
+canvas{
+    width:100%;
+    height:100%;
+}
