@@ -9,6 +9,7 @@
   grid-template-columns: minmax(auto, map-get($grid-breakpoints, desktop-large));
   padding: $spacer;
   justify-content: center;
+  position: relative;
 }
 
 // Video explainer

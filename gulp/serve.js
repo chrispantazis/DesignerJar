@@ -47,6 +47,7 @@ function browser() {
 
   gulp.watch($.pathPosix.join(conf.paths.src, '**/*.html'), build.nunjucks);
   gulp.watch($.pathPosix.join(conf.paths.src, 'assets/**/*.scss'), styles.styles);
+  gulp.watch($.pathPosix.join(conf.paths.src, 'assets/**/*.js'), scripts.scripts);
 }
 
 const serve = gulp.series(build.clean, setPathDist, setBase, build.build, browser);
