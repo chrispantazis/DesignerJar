@@ -37,7 +37,7 @@ function browser() {
   });
 
   gulp.watch([
-    '.server/**/*.{html,js,png,jpg,gif}',
+    '.server/**/*.{html,js,png,jpg,gif,svg}',
   ], {
     delay: 500
   }, function(callback) {
