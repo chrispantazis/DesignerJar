@@ -3,11 +3,19 @@
 	display: grid;
 	grid-gap: $spacer;
 	counter-reset: section;
+	position: relative;
 	@include media-up(tablet) {
 		grid-template-columns: repeat(3, 1fr);
 	}
-	li:before {
-		
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		left: 16%;
+		right: 16%;
+		bottom: $spacer;
+		height: 3px;
+		background: linear-gradient(to right, theme-color(secondary), darken(theme-color(secondary), 14%));
 	}
 }
 
@@ -15,5 +23,29 @@
 	&:before {
 		counter-increment: section;	
 		content: counter(section); 
+		display: block;
+		margin-bottom: $spacer*1.5;
+		position: relative;
+		z-index: 2;
+	}
+	&:after {
+		content: "";
+		width: $spacer*2;
+		height: $spacer*2;
+		background: theme-color(secondary);
+		display: inline-block;
+		border-radius: 50%;
+		margin-top: $spacer*3;
+		vertical-align: bottom;
+	}
+	&:nth-child(2) {
+		&:after {
+			background: darken(theme-color(secondary), 7%);
+		}
+	}
+	&:nth-child(3) {
+		&:after {
+			background: darken(theme-color(secondary), 14%);
+		}
 	}
 }
