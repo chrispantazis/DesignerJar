@@ -4,18 +4,20 @@
 	grid-gap: $spacer;
 	counter-reset: section;
 	position: relative;
-	@include media-up(tablet) {
-		grid-template-columns: repeat(3, 1fr);
-	}
 	&:after {
-		content: "";
 		position: absolute;
 		z-index: 1;
 		left: 16%;
 		right: 16%;
-		bottom: $spacer;
-		height: 3px;
+		bottom: $spacer - 2px;
+		height: 4px;
 		background: linear-gradient(to right, theme-color(secondary), darken(theme-color(secondary), 14%));
+		@include media-up(tablet) {
+			content: "";
+		}
+	}
+	@include media-up(tablet) {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
@@ -29,7 +31,6 @@
 		z-index: 2;
 	}
 	&:after {
-		content: "";
 		width: $spacer*2;
 		height: $spacer*2;
 		background: theme-color(secondary);
@@ -37,6 +38,9 @@
 		border-radius: 50%;
 		margin-top: $spacer*3;
 		vertical-align: bottom;
+		@include media-up(tablet) {
+			content: "";
+		}
 	}
 	&:nth-child(2) {
 		&:after {
