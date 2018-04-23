@@ -18,9 +18,11 @@
   height: 3rem;
   margin-bottom: $spacer;
   border-radius: $border-radius;
+  transition: all $transition-speed/2;
   &:focus {
     outline: none;
     border: 1px solid theme-color(gray);
+    transition: all $transition-speed/2;
   }
   &::-webkit-input-placeholder {
     color: theme-color(gray);

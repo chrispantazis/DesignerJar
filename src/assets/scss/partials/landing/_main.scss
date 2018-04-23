@@ -35,6 +35,7 @@
       -webkit-align-items: center;
       -webkit-box-align: center;
       align-items: center;
+      transition: background-color $transition-speed/2;
   	  &:after {
   	    content:'';
   	    background-image: url(/../assets/images/icons/play.svg);
@@ -42,7 +43,7 @@
   	    width: 21px;
   	    display: block;
   	    margin: 0 auto;
-        background-color: theme-color(secondary);
+        background-color: transparent;
   	  }
       &:hover {
         background-color: lighten(theme-color(secondary), 2%);
