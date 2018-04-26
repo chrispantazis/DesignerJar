@@ -1,11 +1,12 @@
+// Footer
 .dj-footer {
+  font-size: 0.875rem;
   color: theme-color(gray-light);
   a {
     color: theme-color(secondary-light);
   }
 }
-.dj-footer__links {
-  font-size: 0.875rem;
+.dj-footer__links {  
   @include media-up(tablet) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -15,8 +16,7 @@
     font-size: 1.333rem;
   } 
 }
-.dj-footer__column {
-  background: theme-color(primary);
+.dj-footer__column {  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +29,7 @@
   }
 }
 .dj-footer__column:nth-child(1) {
+  background: theme-color(primary);
   @include media-up(tablet) {
     margin-top: $spacer;
     grid-row: 1/-1;
@@ -38,6 +39,18 @@
     a {    
       font-size: 1.845rem;
     }
+  }
+}
+.dj-footer__column:nth-child(2) {
+  background: darken(theme-color(primary), 2%);
+  @include media-up(tablet) {
+    background: theme-color(primary);
+  }
+}
+.dj-footer__column:nth-child(3) {
+  background: darken(theme-color(primary), 4%);
+  @include media-up(tablet) {
+    background: theme-color(primary);
   }
 }
 
