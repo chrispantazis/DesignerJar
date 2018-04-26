@@ -16,23 +16,36 @@
     font-size: 1.333rem;
   } 
 }
-.dj-footer__column {
-  background: theme-color(primary);
+.dj-footer__column {  
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   grid-row-start: 2;
-  padding: $spacer*2 0;
+  padding: $spacer*2 $spacer;
 }
 .dj-footer__column:nth-child(1) {
+  background: theme-color(primary);
   @include media-up(tablet) {
     grid-row: 1/-1;
     background: lighten(theme-color(primary), 5%);
     box-shadow: 0 52px 114px 0 rgba(theme-color(primary-dark), .1);
   }
 }
+.dj-footer__column:nth-child(2) {
+  background: darken(theme-color(primary), 2%);
+  @include media-up(tablet) {
+    background: theme-color(primary);
+  }
+}
+.dj-footer__column:nth-child(3) {
+  background: darken(theme-color(primary), 4%);
+  @include media-up(tablet) {
+    background: theme-color(primary);
+  }
+}
+
 .dj-footer__copyright {
-  padding: $spacer 0;
+  padding: $spacer;
   background: theme-color(primary-dark);
 }
