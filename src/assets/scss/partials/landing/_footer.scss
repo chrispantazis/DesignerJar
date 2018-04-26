@@ -9,7 +9,7 @@
   @include media-up(tablet) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: $spacer*2 40vh;
+    grid-template-rows: $spacer*2 60vh;
   }
   a {    
     font-size: 1.333rem;
@@ -22,17 +22,30 @@
   justify-content: center;
   flex-direction: column;
   grid-row-start: 2;
-  padding: $spacer*2 0;
+  padding: $spacer*3 0;
+  text-align: center;
+  @include media-up(tablet) {
+    text-align: left;
+  }
 }
 .dj-footer__column:nth-child(1) {
   @include media-up(tablet) {
+    margin-top: $spacer;
     grid-row: 1/-1;
     background: lighten(theme-color(primary), 5%);
     box-shadow: 0 52px 114px 0 rgba(theme-color(primary-dark), .1);
+    font-size: 1rem;
+    a {    
+      font-size: 1.845rem;
+    }
   }
 }
 
 .dj-footer__copyright {
-  padding: $spacer 0;
+  padding: $spacer;
   background: theme-color(primary-dark);
+  p, a {
+    font-size: 0.8rem;
+    display: inline-block;
+  }
 }
