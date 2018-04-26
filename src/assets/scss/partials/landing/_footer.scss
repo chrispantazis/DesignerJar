@@ -1,11 +1,12 @@
+// Footer
 .dj-footer {
+  font-size: 0.875rem;
   color: theme-color(gray-light);
   a {
     color: theme-color(secondary-light);
   }
 }
-.dj-footer__links {
-  font-size: 0.875rem;
+.dj-footer__links {  
   @include media-up(tablet) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -31,7 +32,6 @@
     box-shadow: 0 52px 114px 0 rgba(theme-color(primary-dark), .1);
   }
 }
-
 .dj-footer__copyright {
   padding: $spacer 0;
   background: theme-color(primary-dark);
