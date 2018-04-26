@@ -1,88 +1,38 @@
 .dj-footer {
-  @include media-up(tablet) {
-    min-height: 40vh;
-    display: block;
-    grid-template-columns: 100% 1fr;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:  1fr;
+  color: theme-color(gray-light);
+  a {
+    color: theme-color(secondary-light);
   }
 }
-
-.dj-footer__brand {
-  text-align: center;
+.dj-footer__links {
+  font-size: 0.875rem;
+  @include media-up(tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: $spacer*2 40vh;
+  }
+  a {    
+    font-size: 1.333rem;
+  } 
+}
+.dj-footer__column {
+  background: theme-color(primary);
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-row-start: 2;
+  padding: $spacer*2 0;
+}
+.dj-footer__column:nth-child(1) {
   @include media-up(tablet) {
-    grid-row: 1;
-  }
-}
-
-.dj-footer__brand-image {
-  height: $header-height * 0.4;
-  padding-right: $spacer/2;
-}
-
-.dj-footer__brand-text {
-  color: theme-color(background);
-}
-
-.dj-footer__links {
-    background: theme-color(primary);
-    padding: $spacer*7 $spacer;
-    color: theme-color(secondary-light);
-    font-size: 0.875rem;
-    div {
-      margin: $spacer*4 0;
-    }
-  @include media-up(tablet) {
-    background: theme-color(primary);
-    padding: $spacer*7 $spacer;
-    display: grid;
-    grid-template-columns: .5fr 1fr 1fr;
-    color: theme-color(secondary-light);
-    font-size: 0.875rem;
-  }
-  a {
-    color: lighten(theme-color(secondary-light), 20%);
-    font-size: 1.2rem;
-    margin-top: $spacer/2;
-    display: block;
-  }
-}
-
-.dj-footer__social-links {
-  @include media-up(tablet) {
-    font-size: $font-size-small;
+    grid-row: 1/-1;
+    background: lighten(theme-color(primary), 5%);
+    box-shadow: 0 52px 114px 0 rgba(theme-color(primary-dark), .1);
   }
 }
 
 .dj-footer__copyright {
+  padding: $spacer 0;
   background: theme-color(primary-dark);
-  padding: $spacer;
-  align-self: start;  
-  color: theme-color(secondary-light);
-  font-size: 0.875rem;
-  @include media-up(tablet) {
-    grid-column-start: 1;
-  }
-  a {
-    color: lighten(theme-color(secondary-light), 20%);
-  }
-  .right {
-    text-align: center;
-    margin: $spacer*2 0;
-    @include media-up(tablet) {
-      float: right;
-      margin: $spacer/4 0 0 0;
-    }
-  }
-  .left {
-    text-align: center;
-    margin: $spacer*2 0;
-    @include media-up(tablet) {
-      float: left;
-      margin: $spacer/4 0 0 0;
-    }
-  }
 }
