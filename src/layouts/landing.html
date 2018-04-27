@@ -48,10 +48,18 @@
     <script src="assets/js/youtube-popup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71654451-5"></script>
      <script>
         AOS.init();
         var scroll = new SmoothScroll('a[href*="#"]');
         $(".dj-explainer-video").grtyoutube();
+
+        // Google Analytics
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-71654451-5');
     </script>
     {% block scripts %}{% endblock %}
   </body>
