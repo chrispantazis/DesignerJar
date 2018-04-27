@@ -31,7 +31,7 @@
 .dj-footer__column:nth-child(1) {
   background: theme-color(primary);
   @include media-up(tablet) {
-    margin-top: $spacer;
+    margin-top: $spacer*1.5;
     grid-row: 1/-1;
     background: lighten(theme-color(primary), 5%);
     box-shadow: 0 52px 114px 0 rgba(theme-color(primary-dark), .1);
