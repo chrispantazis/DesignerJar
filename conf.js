@@ -21,7 +21,7 @@ exports.target = {
 };
 
 exports.data = {
-  base: argv.prod === true ? '/' : '/portal/'
+  base: argv.prod === true ? '/' : '/'
 };
 
 exports.paths = {
